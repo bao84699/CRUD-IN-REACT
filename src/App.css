@@ -18,7 +18,6 @@
 .liquid-glass-card {
   background: rgba(36, 35, 35, 0.089);
   backdrop-filter: blur(3px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(16px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -30,7 +29,6 @@
 
 .liquid-glass-input {
   backdrop-filter: blur(3px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(16px) url(#displacementFilter);
   background: rgba(255, 255, 255, 0.527);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 30px;
@@ -39,7 +37,6 @@
   outline: none;
   font-size: 15px;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   transition: all 0.25s ease;
   box-sizing: border-box;
 }
@@ -54,7 +51,6 @@
 .liquid-glass-button {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(12px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 12px;
   padding: 10px 22px;
@@ -89,7 +85,6 @@
   margin-bottom: 12px;
   background: rgba(51, 51, 51, 0.096);
   backdrop-filter: blur(18px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(18px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.3);
@@ -127,7 +122,6 @@
   color: rgba(255, 255, 255, 0.95);
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 6px 14px;
   border-radius: 20px;
@@ -152,7 +146,6 @@
   padding: 10px 25px;
   background: rgba(6, 6, 6, 0.067);
   backdrop-filter: blur(4px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(2px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.078), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
   border-radius: 30px;
@@ -192,7 +185,6 @@ thead {
 .liquid-glass-row {
   background: rgba(255, 255, 255, 0.014);
   backdrop-filter: blur(3px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(20px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
   color: #fff;
@@ -325,7 +317,6 @@ thead {
   cursor: pointer;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(2px) url(#displacementFilter);
-  -webkit-backdrop-filter: blur(2px) url(#displacementFilter);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.103);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
