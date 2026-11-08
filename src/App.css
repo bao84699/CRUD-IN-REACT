@@ -1,0 +1,362 @@
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.5px;
+}
+
+.liquid-glass-card {
+  background: rgba(36, 35, 35, 0.089);
+  backdrop-filter: blur(3px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(16px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.liquid-glass-input {
+  backdrop-filter: blur(3px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(16px) url(#displacementFilter);
+  background: rgba(255, 255, 255, 0.527);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 10px 16px;
+  color: #ffffff;
+  outline: none;
+  font-size: 15px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+
+.liquid-glass-input:focus {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
+}
+
+.liquid-glass-button {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(12px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 10px 22px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease;
+}
+
+.liquid-glass-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+}
+
+.liquid-glass-button:active {
+  transform: translateY(0);
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  background: rgba(51, 51, 51, 0.096);
+  backdrop-filter: blur(18px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(18px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.user-item:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.user-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.filter-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px #34d399;
+}
+
+.button-crud {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+.button-action {
+  padding: 10px 25px;
+  background: rgba(6, 6, 6, 0.067);
+  backdrop-filter: blur(4px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(2px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.078), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  margin-bottom: 24px;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 18px;
+}
+table th, table td {
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+thead {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+}
+
+.liquid-glass-card::-webkit-scrollbar {
+  width: 5px;  
+  height: 5px; 
+}
+.liquid-glass-card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.034);
+  border-radius: 10px;
+}
+
+.liquid-glass-card::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.liquid-glass-card::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.081);
+}
+.liquid-glass-row {
+  background: rgba(255, 255, 255, 0.014);
+  backdrop-filter: blur(3px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(20px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.5);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===== FORM THÊM / SỬA ===== */
+.form-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Chia form thành 5 cột giống mẫu */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-item label {
+  font-size: 14px;
+}
+
+.form-item .liquid-glass-input {
+  width: 100%;
+  height: 40px;
+}
+
+.input-color {
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* Chữ trong dropdown của select bị trắng trên nền trắng nên đổi sang màu đen */
+.liquid-glass-input option {
+  color: #000;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons .button-action {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* Màn hình nhỏ thì chỉ còn 2 cột */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== THANH SORT ===== */
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* o select sort dung chung class button-action, chi sua lai may cho nay */
+.select-sort {
+  margin-bottom: 0;
+  padding: 8px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-sort option {
+  color: #000;
+}
+
+/* ===== BẢNG ===== */
+.table-wrapper {
+  max-height: 500px;
+  overflow: auto;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Giữ dòng tiêu đề đứng yên khi cuộn */
+.table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(20, 20, 20, 0.85);
+  z-index: 1;
+}
+
+.table-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.td-long {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-small {
+  padding: 6px 16px;
+  margin: 0 3px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(2px) url(#displacementFilter);
+  -webkit-backdrop-filter: blur(2px) url(#displacementFilter);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.103);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-edit {
+  background: rgba(59, 131, 246, 0.404);
+}
+
+.btn-delete {
+  background: rgba(239, 68, 68, 0.39);
+}
+
+.btn-small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+}
+
+.btn-edit:hover {
+  background: rgba(59, 130, 246, 0.45);
+}
+
+.btn-delete:hover {
+  background: rgba(239, 68, 68, 0.45);
+}
+
+.btn-small:active {
+  transform: translateY(0);
+}
+
+.loading-text {
+  text-align: center;
+  padding: 20px;
+}
